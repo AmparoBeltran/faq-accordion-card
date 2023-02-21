@@ -1,0 +1,128 @@
+:root {
+    --primary-very-dark-blue: hsl(238, 29%, 16%);
+    --primary-soft-red: hsl(14, 88%, 65%);
+
+    --bg-grad-soft-violet: hsl(273, 75%, 66%);
+    --bg-grad-soft-blue: hsl(240, 73%, 65%);
+
+    --text-very-dark-greyish-blue: hsl(237, 12%, 33%);
+    --text-dark-greyish-blue: hsl(240, 6%, 50%);
+
+    --dividers-greyish-blue: hsl(240, 5%, 91%);
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    min-height: 100%;
+    background-image: linear-gradient(0deg, var(--bg-grad-soft-blue), var(--bg-grad-soft-violet));
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.main-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-x: -490px;
+    background-position-y: -272px;
+
+    padding: 40px;
+    width: 70vw;
+    height: max-content;
+    background-color: white;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.illustration {
+    display: flex;
+    align-items: flex-end;
+    margin-left: -145px;
+}
+
+.woman {
+    margin-left: -170px;
+
+}
+
+.box {
+    z-index: 2;
+}
+
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: white;
+    color: var(--text-very-dark-greyish-blue);
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .accordion:after {
+    content: '\2304'; /* Unicode character for "arrow down" sign  */
+    font-size: 13px;
+    color: var(--primary-soft-red);
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2303"; /* Unicode character for "arrow up" sign */
+  }
+  
+  .active, .accordion:hover {
+    color: var(--primary-soft-red);
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    /* padding: 0 18px; */
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  .show{
+    display: block;
+  }
+
+
+/* .question-container {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.divider-solid {
+    border-top: .5px solid var(--dividers-greyish-blue);
+}
+
+/* SIZES
+- Mobile: 375px
+- Desktop: 1440px */
